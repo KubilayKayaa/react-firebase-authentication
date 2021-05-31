@@ -1,0 +1,497 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100vw !important;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+
+}
+
+input,
+button {
+    outline: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #222;
+    color: #fff;
+    height: 52px;
+    padding: 8px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+}
+
+.navbar-logo {
+    font-size: 24px !important;
+    font-weight: bold;
+}
+
+.navbar a {
+    margin: 0 12px;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar button {
+    background: #fff;
+    color: #222;
+    padding: 8px 12px;
+    border: none;
+    margin-right: 32px;
+    cursor: pointer;
+}
+
+.form-items {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    box-shadow: -6px 6px 6px rgb(226, 226, 226);
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 92px;
+    padding: 24px 48px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-menu a:nth-child(2) {
+    margin-right: 32px;
+}
+
+.form-items p {
+    margin-bottom: 32px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.form-items input {
+    margin-bottom: 12px;
+    padding: 8px;
+    border: 1px solid rgb(206, 205, 205);
+    width: 100%;
+    border-radius: 4px;
+}
+
+.form-items button {
+    background: none;
+    color: #222;
+    border: 1px solid rgb(228, 228, 228) !important;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    transition: 200ms all;
+    width: 336px;
+    cursor: pointer;
+}
+
+.form-items button:hover {
+    box-shadow: -3px 3px 6px #ccc;
+}
+
+.form-items .form-item-redirect {
+    margin-top: 24px;
+    font-size: 13px;
+    color: rgb(62, 62, 255);
+    text-decoration: none;
+}
+
+.form-items .error-message {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 24px;
+    background: rgb(255 154 154 / 45%);
+    color: red;
+    padding: 8px;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.form-items .data-message {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 24px;
+    background: rgb(30 255 30 / 38%);
+    color: rgb(2 185 27);
+    padding: 8px;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.add-post .error-message {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 24px;
+    background: rgb(255 154 154 / 45%);
+    color: red;
+    padding: 8px;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.add-post .data-message {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 24px;
+    background: rgb(30 255 30 / 38%);
+    color: rgb(2 185 27);
+    padding: 8px;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.home-title {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.navbar-user {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-user p {
+    margin-right: 12px;
+}
+
+.profile {
+    padding: 24px 72px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 68px;
+}
+
+.profile h2 {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 12px;
+}
+
+.profile input {
+    padding: 8px;
+    border: 1px solid #eee;
+    width: 320px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.profile .profile-card {
+    display: flex;
+    align-items: center;
+}
+
+.profile .profile-edit-btn {
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.profile .profile-edit {
+    background: none;
+    border: 1px solid rgb(228, 228, 228);
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: 100ms all;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.profile .profile-edit:hover {
+    box-shadow: -3px 3px 6px #eee;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+}
+
+.profile-section p {
+    margin-left: 12px;
+    margin-bottom: 11px;
+}
+
+
+.profile-section .error-message {
+    font-size: 14px;
+    font-weight: 400;
+    background: rgb(255 154 154 / 45%);
+    color: red;
+    padding: 8px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.profile-section .data-message {
+    font-size: 14px;
+    font-weight: 400;
+    background: rgb(30 255 30 / 38%);
+    color: rgb(2 185 27);
+    padding: 8px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.add-post {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 1200px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    box-shadow: -3px 3px 6px #ccc;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    padding: 24px;
+    margin-top: 92px;
+}
+
+.add-post h3 {
+    text-align: left;
+    padding-bottom: 4px;
+    margin-bottom: 20px;
+    width: 1214px;
+    border-bottom: 1px solid #eee;
+}
+
+.add-post input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    background: rgba(243, 243, 243, 0.863);
+    border-radius: 4px;
+    border: none;
+}
+
+.add-post button {
+    border: 1px solid #eee;
+    padding: 8px;
+    width: 1214px;
+    border-radius: 4px;
+    background: none;
+    cursor: pointer;
+    transition: 300ms all;
+}
+
+.add-post button:hover {
+    background: rgba(243, 243, 243, 0.863);
+}
+
+.posts h2 {
+    width: 1254px;
+    margin: 0 auto;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 24px;
+    margin-top: 72px !important;
+}
+
+.post {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 1200px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    box-shadow: -3px 3px 6px #ccc;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    padding: 16px;
+    position: relative;
+}
+
+.post h3 {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 16px;
+}
+
+.post .text {
+    font-size: 13.5px;
+    color: #a5a5a5;
+}
+
+.post .user {
+    margin-top: 12px;
+    color: rgb(173, 173, 173);
+    font-size: 13px;
+}
+
+.post .user b {
+    background: #a5a5a5;
+    padding: 4px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 12px;
+    font-weight: 300;
+    width: fit-content;
+}
+
+.post .post-delete {
+    position: absolute;
+    cursor: pointer;
+    right: 16px;
+    top: 16px;
+}
+
+.post-edit-button {
+    position: absolute;
+    cursor: pointer;
+    right: 48px;
+    top: 16px;
+}
+
+.ReactModal__Content {
+    overflow-y: hidden !important;
+    top: 120px !important;
+    height: fit-content;
+    background: #fff !important;
+    position: relative !important;
+    width: 320px;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    border: 1px solid #eee !important;
+    border-radius: 8px;
+}
+
+.ReactModal__Overlay {
+    background: rgb(53 53 53 / 96%) !important;
+    z-index: 999999999 !important;
+}
+
+.close-button {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: none !important;
+    border: none !important;
+    padding: 0px !important;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 48px 16px;
+}
+
+.content button {
+    width: 276px;
+    border-radius: 4px;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.content input {
+    width: 90%;
+    border: 1px solid #e9e9e9;
+    border-radius: 4px;
+    margin: 8px 0px;
+    padding: 8px;
+}
+
+.post-detail{
+    margin-top: 92px;
+}
+
+@media only screen and (max-width: 1360px) {
+    .add-post{
+        width: 700px;
+    }
+    .add-post h3{
+        width: 714px;
+    }
+    .add-post .add-post-btn{
+        width: 714px;
+    }
+    .posts h2{
+        width: 754px;
+    }
+    .post{
+        width: 720px;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .add-post{
+        width: 400px;
+    }
+    .add-post h3{
+        width: 414px;
+    }
+    .add-post .add-post-btn{
+        width: 414px;
+    }
+    .posts h2{
+        width: 454px;
+    }
+    .post{
+        width: 420px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .add-post{
+        width: 300px;
+    }
+    .add-post h3{
+        width: 314px;
+    }
+    .add-post .add-post-btn{
+        width: 314px;
+    }
+    .posts h2{
+        width: 354px;
+    }
+    .post{
+        width: 320px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .add-post{
+        width: 250px;
+    }
+    .add-post h3{
+        width: 264px;
+    }
+    .add-post .add-post-btn{
+        width: 274px;
+    }
+    .posts h2{
+        width: 304px;
+    }
+    .post{
+        width: 270px;
+    }
+}

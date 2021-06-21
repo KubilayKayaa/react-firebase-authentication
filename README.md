@@ -1,5 +1,5 @@
-# Reactjs ve Firebase kullanarak Authentication uygulaması yaptım. 
-# Üye olduktan sonra post girebilirsiniz. Bu postu silebilir ve düzenleyebilirsiniz. Ek olarak üstüne tıkladığınız zaman detay sayfasına gidebilirsiniz.
-# Login sayfasında 'Şifremi Unuttum' kısmına tıklayarak şifrenizi geri alabilirsiniz.
+# I made an Authentication application using Reactjs and Firebase.
+# After you become a member, you can enter a post. You can delete and edit this post. In addition, when you click on it, you can go to the detail page.
+# You can get your password back by clicking 'Forgot Password' on the login page.
 
-https://4opqr.csb.app/
+[See Project](https://4opqr.csb.app/)
